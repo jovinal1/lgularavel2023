@@ -66,6 +66,24 @@
 					<span class="sidebar-text">Users Management</span>
 				</a>
 			</li>
+			<li class="nav-item {{ request()->routeIs('contacts.*') ? 'active' : '' }}">
+				<a href="{{ route('contacts.index') }}" class="nav-link">
+					<span class="sidebar-icon">
+						<i class="icon icon-xs me-2  bi bi-person-bounding-box"></i>
+					</span>
+					<span class="sidebar-text">Contacts Management</span>
+				</a>
+			</li>
+
+			<li class="nav-item {{ request()->routeIs('categories.*') ? 'active' : '' }}">
+				<a href="{{ route('categories.index') }}" class="nav-link">
+					<span class="sidebar-icon">
+						<i class="icon icon-xs me-2  bi bi-person-bounding-box"></i>
+					</span>
+					<span class="sidebar-text">Categories Management</span>
+				</a>
+			</li>
+
 			<li role="separator" class="dropdown-divider mt-4 mb-3 border-gray-700"></li>
 			<li class="nav-item">
 				<a href="{{ url('/') }}" class="nav-link d-flex align-items-center">
